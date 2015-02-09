@@ -16,5 +16,10 @@ Steps to load the app in chrome
 3. Indian classical music/ custom playlist
 4. Motivational quotes
 5. TRACK PRODUCTIVITY
+6. Password Keeper and manager(Varun)
+7. Football and Cricket Scores can be shown on choosing favourite team(Varun)
+8. Stock Prices can also be shown on choosing which stock u wanna follow(Varun)
+9. Alarms for Meetings/Events(Varun)
+10.  Suggested Food based on weather(Varun)
 
 Lets try and follow the best practices by John Papas https://github.com/johnpapa/angularjs-styleguide.
