@@ -1,4 +1,4 @@
-timelyv2App.controller("mainCtrl",function($scope,$timeout){
+timelyv2App.controller("mainController",function($scope,$timeout){
 	
 	$scope.date = {};
 
