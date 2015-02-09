@@ -17,9 +17,12 @@ Steps to load the app in chrome
 4. Motivational quotes
 5. TRACK PRODUCTIVITY
 6. Password Keeper and manager(Varun)
-7. Football and Cricket Scores can be shown on choosing favourite team(Varun)
-8. Stock Prices can also be shown on choosing which stock u wanna follow(Varun)
+7*. Football and Cricket Scores can be shown on choosing favourite team(Varun)//needs to be discussed
+8*. Stock Prices can also be shown on choosing which stock u wanna follow(Varun)//needs to be discussed
 9. Alarms for Meetings/Events(Varun)
-10.  Suggested Food based on weather(Varun)
+10*.  Suggested Food based on weather(Varun)//needs to be discussed.
+11.Small tiles(3/4) showing the maximum used websites.
+12*.A send to pocket like button(similar to bookmarks),which may be integrated with the mobile app.//may be an enhancement.
+13.A todo list.
 
 Lets try and follow the best practices by John Papas https://github.com/johnpapa/angularjs-styleguide.
