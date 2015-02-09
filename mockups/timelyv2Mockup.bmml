@@ -1,0 +1,50 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1430" measuredH="782" mockupW="1366" mockupH="768">
+  <controls>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="64" y="14" w="1366" h="768" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A/%0A%20%0A%20%0A%20%0A%20%0A%09%09%09%09%09%09%0A%09%09%09%09%09%09</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::IconLabel" x="1081" y="93" w="-1" h="-1" measuredW="112" measuredH="63" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Password%20manager</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::IconLabel" x="1216" y="93" w="-1" h="-1" measuredW="48" measuredH="63" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>To%20Do</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::IconLabel" x="1290" y="94" w="-1" h="-1" measuredW="113" measuredH="63" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Notification/Alarms</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Icon" x="1362" y="703" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>GearIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Icon" x="1305" y="703" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>VolumeIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::IconLabel" x="1008" y="93" w="-1" h="-1" measuredW="48" measuredH="63" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Pocket</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::TextArea" x="630" y="296" w="186" h="50" measuredW="200" measuredH="140" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>40</size>
+        <text>11%3A24%20AM%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::TextInput" x="564" y="372" w="318" h="-1" measuredW="255" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22Stay%20Hungry%2CStay%20Foolish%22</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
