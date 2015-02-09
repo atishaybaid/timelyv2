@@ -1,13 +1,17 @@
-timelyv2App.controller("mainController",function($scope,$timeout){
-	
-	$scope.date = {};
+(function () {
+    'use strict';
 
-	var updateTime = function(){
+    TimelyApp.controller("mainController", function ($scope, $timeout) {
 
-		$scope.date.currentTime = new Date();
-		$timeout(updateTime,1000);
+        $scope.date = {};
 
-	};
+        var updateTime = function () {
 
-	updateTime();
-});
+            $scope.date.currentTime = new Date();
+            $timeout(updateTime, 1000);
+
+        };
+
+        updateTime();
+    });
+}());

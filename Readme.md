@@ -15,5 +15,6 @@ Steps to load the app in chrome
 2. Customizable background
 3. Indian classical music/ custom playlist
 4. Motivational quotes
+5. TRACK PRODUCTIVITY
 
 Lets try and follow the best practices by John Papas https://github.com/johnpapa/angularjs-styleguide.
