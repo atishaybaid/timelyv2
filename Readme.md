@@ -25,4 +25,10 @@ Steps to load the app in chrome
 12*.A send to pocket like button(similar to bookmarks),which may be integrated with the mobile app.//may be an enhancement.
 13.A todo list.
 
+
+### Got an awesome idea while designing the mockup -- what if we have a default template(as always) + we let the user personalise
+### how they want it to look, that is we can give them a list of all the features we provide, they can choose which all they want displayed +
+### wait for it.... WHERE IT HAS TO BE DISPLAYED..(that is modifying the DOM real time.
+No idea how feasible it is or even if it is possible at all..just ideas running wild.
+
 Lets try and follow the best practices by John Papas https://github.com/johnpapa/angularjs-styleguide.
