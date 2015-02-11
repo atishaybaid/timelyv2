@@ -42,4 +42,6 @@ Check these out -- would be awesome.
 
  http://gridster.net/
 
+ http://angular-js.in/angular-gridster/
+
 Lets try and follow the best practices by John Papas https://github.com/johnpapa/angularjs-styleguide.
