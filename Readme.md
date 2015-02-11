@@ -45,3 +45,51 @@ Check these out -- would be awesome.
  http://angular-js.in/angular-gridster/
 
 Lets try and follow the best practices by John Papas https://github.com/johnpapa/angularjs-styleguide.
+
+### V 0.1
+#### Current Time - Atishay
+hh:mm am/pm
+small size analog - right center
+
+#### Background - Varun
+10 pics
+set one bg
+set random
+cycle through
+
+#### Music - Aswin
+10 songs
+bottom right
+
+#### Motivational Quotes - Atishay
+top centre
+20 qoutes
+randomise each time
+
+#### Track Productivity - Atishay
+Time spent on top 3 sites
+Center - center
+like chrome web store
+
+#### Meetings - Varun
+Right slider
+Outlook style -15 min pop up
+
+#### TODO - Varun
+todo with alarm
+
+#### WishList - Aswin
+do POC
+
+#### Trending News - Aswin
+top 5 news
+left slider show news and associated links
+
+#### Weather - Atishay
+Temperature
+
+#### Final Wireframe - Aswin
+
+
+
+
