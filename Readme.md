@@ -25,9 +25,21 @@ Steps to load the app in chrome
 12. A send to pocket like button(similar to bookmarks),which may be integrated with the mobile app.
 13. A todo list.
 14. A wishlist - where users can add products from multiple sites and compare prices across sites.
+15. Trending news
+16. Weather
 
 
 ### Got an awesome idea while designing the mockup -- what if we have a default template(as always) + we let the user personalise how they want it to look, that is we can give them a list of all the features we provide, they can choose which all they want displayed + wait for it.... WHERE IT HAS TO BE DISPLAYED..(that is modifying the DOM real time).
 No idea how feasible it is or even if it is possible at all..just ideas running wild.
+
+Check these out -- would be awesome.
+
+ https://rawgit.com/ManifestWebDesign/angular-gridster/master/index.html#/main
+
+ https://rawgit.com/ManifestWebDesign/angular-gridster/master/index.html#/dashboard
+
+ http://datatorrent.github.io/malhar-angular-dashboard/#/
+
+ http://gridster.net/
 
 Lets try and follow the best practices by John Papas https://github.com/johnpapa/angularjs-styleguide.
