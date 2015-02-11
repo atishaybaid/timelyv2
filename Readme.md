@@ -48,7 +48,7 @@ Lets try and follow the best practices by John Papas https://github.com/johnpapa
 
 ### V 0.1
 #### Current Time - Atishay
-hh:mm am/pm
+hh:mm am/pm.
 small size analog - right center
 
 #### Background - Varun
