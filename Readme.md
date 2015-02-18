@@ -1,4 +1,4 @@
-﻿# Description
+# Description
 
 ### Timelyv2 is a chrome extension, used to track productivity, provide motivational quotes and indian classical background music.
 
@@ -51,6 +51,10 @@ Lets try and follow the best practices by John Papas https://github.com/johnpapa
 hh:mm am/pm.
 small size analog - right center
 
+Will be using HTML5 to and javascript functions to create our own clock,will not be using any external API.
+
+REF:https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage
+
 #### Background - Varun
 10 pics
 set one bg
@@ -70,6 +74,9 @@ randomise each time
 Time spent on top 3 sites
 Center - center
 like chrome web store
+
+To get time spent on different websites we will be using Browser History.
+REF:https://developer.chrome.com/extensions/history
 
 #### Meetings - Varun
 Right slider
