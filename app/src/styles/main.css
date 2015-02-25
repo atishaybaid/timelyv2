@@ -39,3 +39,13 @@ header{
 	text-align: center;
 	color: white;
 }
+
+input{
+	 border: 0px; 
+     border-bottom:1px solid;	
+	 background: transparent;
+	 width: 200px;
+}
+input:focus{
+	outline: 0px;
+}
