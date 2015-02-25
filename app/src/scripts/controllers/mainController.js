@@ -17,7 +17,7 @@
 
         //Season Service
 
-        /*seasonService.getAll();*/
+        /*seasonService.getAll();
         var giveSeason = function(){
         	var date = new Date().getMonth();
         	if(date>=2 && date<=3){
@@ -34,6 +34,6 @@
         	}
         };
 
-        $('body').css({'background-image':'url(\'images/'+giveSeason()+'.jpg\')'});
+        $('body').css({'background-image':'url(\'images/'+giveSeason()+'.jpg\')'});*/
     }]);
 }());

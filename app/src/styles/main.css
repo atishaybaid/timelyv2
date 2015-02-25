@@ -2,3 +2,40 @@
 	width:100%;
 	height: 100%;
 }
+
+body{
+	background: url('../images/Summer.jpg');
+}
+
+header{
+	margin-top: 15px;
+}
+
+#notifyAlarm,#todoList{
+	float: right;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.iconStyle{
+	font-size: 36px;
+	color: white;
+}
+
+#currentTime{
+	text-align: center;
+	color: white;
+	font-size: 56px;
+	margin-top: 15px;
+}
+
+#yourGoal{
+	text-align: center;
+	color: white;
+
+}
+
+#qutation{
+	text-align: center;
+	color: white;
+}
