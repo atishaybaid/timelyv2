@@ -11,14 +11,16 @@
     </header>
     <div id="main">
         <div id="currentTime">
-            <span>11:24</span>
+            <span>{{date.currentTime | date:"hh mm ss"}}</span>
+            <br>
+            <span>{{date.currentTime | date:"EEEE,MMMM d,yyyy"}}</span>
         </div>
         <div id="yourGoal">
         <h3>Good Morning,<b>Atishay</b>.<i>Your Goal is to become a <input  type="text" id=""></input>.</i></h3>
 
         </div>
         <div id="qutation">
-        <h4>"Stay Hungry,stay foolish"</h4>
+        <h4>"{{quote}}"</h4>
         </div>
     </div>
     <footer>

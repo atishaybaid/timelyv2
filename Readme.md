@@ -74,6 +74,7 @@ randomise each time
 Time spent on top 3 sites
 Center - center
 like chrome web store
+window.location.href
 
 To get time spent on different websites we will be using Browser History.
 REF:https://developer.chrome.com/extensions/history
