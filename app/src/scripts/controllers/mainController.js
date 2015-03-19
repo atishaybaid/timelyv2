@@ -2,7 +2,12 @@
     'use strict';
     TimelyApp.controller("mainController",function($scope,$timeout,loadQuotationsService,weather) {
            
-            console.log(weather);
+           //console.dir(weather.Temperature);
+
+           weather.Temperature();
+
+
+           //weather.getTemperature();
 
             $scope.quote = loadQuotationsService.todaysQuote();
 

@@ -1,36 +1,27 @@
-TimelyApp.provider("weather", function ($http) {
-    var apiKey = "";
+TimelyApp.service("weather", function ($http) {
+    this.apiKey = "9b702ccc56f4da90";
     
-    this.setApiKey = function(key) {
-      this.apiKey = key;
-      		
-    };
+    
 
     this.getUrl = function(){
-    	var url = "http://api.wunderground.com/api/"
-    				+ this.apiKey +"/conditions/q/CA/San_Francisco.json";
-    	return url;
+        var url = "http://api.wunderground.com/api/"
+                    + this.apiKey +"/conditions/autoip.json";
+        return url;
 
     };
 
-    this.$get = function(){
+    this.Temperature = function(){
 
-    	var url = this.getUrl();
+        var url = this.getUrl();
 
-    	$http.get(url).
-    		success(function(data){
-    			console.log(data);
-    		}).
-    		error(function(data){
-    			console.log(data);
-    		})
-    	
+        $http.get(url).
+            success(function(data){
+                console.log(data);
+            }).
+            error(function(data){
+                console.log(data);
+            })
+        
     };
 
 });
-TimelyApp.config(["weatherProvider",
-    function(weatherProvider) {
-        weatherProvider.setApiKey("9b702ccc56f4da90");
-    }
-])
-
