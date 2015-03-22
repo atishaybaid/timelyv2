@@ -1,9 +1,13 @@
 <div class="mainPage">
 
     <header>
-        <div id="temperature">Temperature</div>
+        <div id="temperature">{{temperature}} &#x2103;</div>
         <div id="todoList">
         	<span class="glyphicon glyphicon-list iconStyle" aria-hidden="true"></span>
+            <div id="todoListPannel">
+             <input type="text" placeholder="Add task" ng-keyup="addTask()" ng-model="newTask"></input>   
+            </div>
+
         </div>
         <div id="notifyAlarm">
             <span class="glyphicon glyphicon-calendar iconStyle" aria-hidden="true"></span>

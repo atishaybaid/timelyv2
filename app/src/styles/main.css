@@ -5,10 +5,14 @@
 
 body{
 	background: url('../images/Summer.jpg');
+
 }
 
 header{
 	margin-top: 15px;
+	color: white;
+	font-size: 24px;
+	margin-left: 10px;
 }
 
 #notifyAlarm,#todoList{
@@ -49,3 +53,5 @@ input{
 input:focus{
 	outline: 0px;
 }
+
+

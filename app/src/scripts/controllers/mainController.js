@@ -1,35 +1,39 @@
 (function() {
     'use strict';
-    TimelyApp.controller("mainController",function($scope,$timeout,loadQuotationsService,weather) {
-           
-           //console.dir(weather.Temperature);
+    TimelyApp.controller("mainController", function($scope, $timeout, loadQuotationsService, weather,toDoService) {
+        $scope.date={} ;
+        $scope.quote;
+        $scope.temperature;
 
-           weather.Temperature();
+        $scope.newTask ="";
 
+        $scope.addTask = function(){
 
-           //weather.getTemperature();
+            toDoService.addTask($scope.newTask);
+        };
+        
 
-            $scope.quote = loadQuotationsService.todaysQuote();
-
-            //weather.getUrl();
-
-            $scope.date = {};
-            var updateTime = function() {
+        var getTemperature = function() {
+            var promise = weather.Temperature();
+            promise.then(function(data) {
+                $scope.temperature = data;
+            }, function(err) {
+                console.log(err);
+            });
+        };
+        var getQuatation = function() {
+            $scope.quote = loadQuotationsService.todaysQuote();           
+        };
+       
+        var updateTime = function() {
                 $scope.date.currentTime = new Date();
                 $timeout(updateTime, 1000);
-            };
+        };
 
-            
-
-        /*chrome.history.search({text:"www.wwe.com"},function(historyItems){
-            console.log(parseInt(historyItems[0].lastVisitTime));
-        });*/
-
+        angular.element(document).ready(function() {
             updateTime();
-               
-
-          
-
-        }
-    );
+            getQuatation();
+            getTemperature();
+        })
+    });
 }());

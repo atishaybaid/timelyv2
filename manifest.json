@@ -1,7 +1,7 @@
 {
 "manifest_version": 2,
   "name": "timelyv2",
-  "permissions":["history","http://api.wunderground.com/api/"],
+  "permissions":["history","http://api.wunderground.com/api/9b702ccc56f4da90/conditions/q/autoip.json"],
   "version": "2.0",
   "background": {
     "scripts": ["app/bower_components/angular/angular.js"]

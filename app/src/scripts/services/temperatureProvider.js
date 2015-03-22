@@ -1,27 +1,21 @@
-TimelyApp.service("weather", function ($http) {
+TimelyApp.service("weather", function($http, $q) {
     this.apiKey = "9b702ccc56f4da90";
-    
-    
-
-    this.getUrl = function(){
-        var url = "http://api.wunderground.com/api/"
-                    + this.apiKey +"/conditions/autoip.json";
+    this.getUrl = function() {
+        var url = "http://api.wunderground.com/api/" + this.apiKey + "/conditions/q/autoip.json";
         return url;
-
     };
-
-    this.Temperature = function(){
-
+    this.Temperature = function() {
         var url = this.getUrl();
-
-        $http.get(url).
-            success(function(data){
-                console.log(data);
+        return $q(function(resolve, reject) {
+            $http.get(url).
+            success(function(data) {
+                if (data) {
+                    resolve(data.current_observation.temp_c);
+                }
             }).
-            error(function(data){
-                console.log(data);
+            error(function(data) {
+                reject("some error occured");
             })
-        
+        });
     };
-
 });

@@ -1,10 +1,10 @@
 TimelyApp.service("loadQuotationsService", function() {
-    var qoutes = [{
-        qoute: "Stay Hungry,Stay foolish"
+    var quotes = [{
+        quote: "Stay Hungry,Stay foolish"
     }, {
-        qoute: "If you want to achieve greatness stop asking for permission"
+        quote: "If you want to achieve greatness stop asking for permission"
     }, {
-        qoute: "Things work out best for those who make the best of how things work out"
+        quote: "Things work out best for those who make the best of how things work out"
     }, {
         quote: "To live a creative life, we must lose our fear of being wrong"
     }, {
@@ -20,24 +20,11 @@ TimelyApp.service("loadQuotationsService", function() {
     }, {
         quote: "If you do what you always did, you will get what you always got"
     }];
-
-    this.todaysQuote = function(){
-    	var date = new Date();
-    	var dateDay = date.getDate()%10;
-    	var quoteOfTheDay = qoutes[dateDay].quote;
-
-    	return quoteOfTheDay;
-
+    this.todaysQuote = function() {
+        var date = new Date();
+        var dateDay = date.getDate() % 10;
+        var quoteOfTheDay = quotes[dateDay].quote;
+        return quoteOfTheDay;
     };
-
-
-
-    this.get = function() {
-        console.log("inside loadData");
-    };
-
-
-
-
 
 })
