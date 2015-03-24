@@ -7,6 +7,7 @@
 
         $scope.newTask ="";
 
+        toDoService.retriveFromStorage();
         $scope.addTask = function(){
 
             toDoService.addTask($scope.newTask);

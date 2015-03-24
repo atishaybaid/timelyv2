@@ -8,11 +8,19 @@ TimelyApp.service("toDoService", function() {
     this.addTask = function(newTaskName) {
         if (event.keyCode === 13) {
             var newTask = new Task(newTaskName);
-            this.storeToLocalStorage(newTask);
+            taskList.push(newTask);
+            this.storeToLocalStorage(taskList)
         };
     };
-    this.storeToLocalStorage = function(newTask) {
-        var key = 'newTask';
-        window.localStorage.setItem(key, angular.toJson(newTask));
+    this.storeToLocalStorage = function(taskList) {
+        var key = 'taskList';
+        window.localStorage.setItem(key, angular.toJson(taskList));
     };
+    this.retriveFromStorage = function(){
+    	console.log("inside retriveFromStorage");
+    	var stringArray = window.localStorage.getItem('taskList');
+    	var taskList = angular.fromJson(stringArray);
+    	console.log(taskList);
+    };
+
 });
