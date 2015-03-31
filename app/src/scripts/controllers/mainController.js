@@ -6,11 +6,14 @@
         $scope.temperature;
 
         $scope.newTask ="";
+        $scope.taskList = [];
 
-        toDoService.retriveFromStorage();
+        
         $scope.addTask = function(){
 
             toDoService.addTask($scope.newTask);
+            $scope.taskList = toDoService.retriveFromStorage();
+
         };
         
 
@@ -31,10 +34,17 @@
                 $timeout(updateTime, 1000);
         };
 
+    
+            
+            $scope.taskList = toDoService.retriveFromStorage();
+
+    
+
         angular.element(document).ready(function() {
             updateTime();
             getQuatation();
             getTemperature();
+            //displayTask();
         })
     });
 }());

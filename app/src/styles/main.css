@@ -44,14 +44,34 @@ header{
 	color: white;
 }
 
-input{
+input[type="text"]{
 	 border: 0px; 
      border-bottom:1px solid;	
 	 background: transparent;
 	 width: 200px;
 }
-input:focus{
+input:focus 
+{
 	outline: 0px;
+	background: black;
 }
 
 
+ul{
+	list-style-type:none;
+}
+
+input[type="checkbox"]{
+display: inline;
+margin: 0px;
+}	
+
+.done-true{
+	text-decoration: line-through;
+}
+
+#taskEditTxt:focus{
+	border-bottom: 0px solid;
+
+
+}

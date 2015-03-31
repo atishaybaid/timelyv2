@@ -1,13 +1,22 @@
 <div class="mainPage">
-
     <header>
         <div id="temperature">{{temperature}} &#x2103;</div>
         <div id="todoList">
-        	<span class="glyphicon glyphicon-list iconStyle" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-list iconStyle" aria-hidden="true"></span>
             <div id="todoListPannel">
-             <input type="text" placeholder="Add task" ng-keyup="addTask()" ng-model="newTask"></input>   
+                <input type="text" placeholder="Add task" ng-keyup="addTask()" ng-model="newTask" id="newTaskTxt"></input>
+                <div id="taskList">
+                    <ul>
+                        <li data-ng-repeat="task in taskList" ng-dblclick="task.editing=!task.editing">
+                            <input type="checkbox" ng-model="task.done" ng-hide="task.editing" />
+                            <span id="taskDisplay" class="done-{{task.done}}" ng-hide="task.editing">
+                            {{task.taskName}}
+                            </span>
+                            <input type="text" ng-show="task.editing" value="{{task.taskName}}">
+                        </li>
+                    </ul>
+                </div>
             </div>
-
         </div>
         <div id="notifyAlarm">
             <span class="glyphicon glyphicon-calendar iconStyle" aria-hidden="true"></span>
@@ -20,16 +29,14 @@
             <span>{{date.currentTime | date:"EEEE,MMMM d,yyyy"}}</span>
         </div>
         <div id="yourGoal">
-        <h3>Good Morning,<b>Atishay</b>.<i>Your Goal is to become a <input  type="text" id=""></input>.</i></h3>
-
+            <h3>Good Morning,<b>Atishay</b>.<i>Your Goal is to become a <input  type="text" id=""></input>.</i></h3>
         </div>
         <div id="qutation">
-        <h4>"{{quote}}"</h4>
+            <h4>"{{quote}}"</h4>
         </div>
     </div>
     <footer>
         <div id="music"></div>
         <div id="settings"></div>
     </footer>
-
 </div>

@@ -7,6 +7,7 @@ TimelyApp.service("toDoService", function() {
     };
     this.addTask = function(newTaskName) {
         if (event.keyCode === 13) {
+            taskList = this.retriveFromStorage();
             var newTask = new Task(newTaskName);
             taskList.push(newTask);
             this.storeToLocalStorage(taskList)
@@ -19,8 +20,14 @@ TimelyApp.service("toDoService", function() {
     this.retriveFromStorage = function(){
     	console.log("inside retriveFromStorage");
     	var stringArray = window.localStorage.getItem('taskList');
-    	var taskList = angular.fromJson(stringArray);
+    	taskList = angular.fromJson(stringArray);
+
+        if(taskList === null){
+            taskList = [];
+        }
+
     	console.log(taskList);
+        return taskList;
     };
 
 });
