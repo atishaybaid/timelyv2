@@ -34,9 +34,17 @@
                 $timeout(updateTime, 1000);
         };
 
+        $scope.editTask = function(task){
+            if (event.keyCode === 13) {
+                toDoService.editTask(task);
+            }
+
+        };
+
     
             
             $scope.taskList = toDoService.retriveFromStorage();
+            console.log($scope.taskList);
 
     
 

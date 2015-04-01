@@ -12,7 +12,7 @@
                             <span id="taskDisplay" class="done-{{task.done}}" ng-hide="task.editing">
                             {{task.taskName}}
                             </span>
-                            <input type="text" ng-show="task.editing" value="{{task.taskName}}">
+                            <input type="text" ng-show="task.editing" value="{{task.taskName}} id="taskEditTxt" ng-keyup="editTask(task)" ng-model="task.taskName"/>
                         </li>
                     </ul>
                 </div>
