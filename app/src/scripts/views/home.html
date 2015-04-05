@@ -2,24 +2,22 @@
     <header>
         <div id="temperature">{{temperature}} &#x2103;</div>
         <div id="todoList">
-            <span class="glyphicon glyphicon-list iconStyle" aria-hidden="true"></span>
-            <div id="todoListPannel">
+            <button class="btn" type="button" ng-init="show ='false'" ng-click="show = !show"><span class="glyphicon glyphicon-list iconStyle" aria-hidden="true"></span></button>
+            <div id="todoListPannel" class="panel panel-default" ng-hide="show">
                 <input type="text" placeholder="Add task" ng-keyup="addTask()" ng-model="newTask" id="newTaskTxt"></input>
+                <div id="taskScoreBar" class="panel-heading"></div>
                 <div id="taskList">
-                    <ul>
-                        <li data-ng-repeat="task in taskList" ng-dblclick="task.editing=!task.editing">
-                            <input type="checkbox" ng-model="task.done" ng-hide="task.editing" />
-                            <span id="taskDisplay" class="done-{{task.done}}" ng-hide="task.editing">
+                    <ul class="">
+                        <li class="panel-body taskName" data-ng-repeat="task in taskList" ng-dblclick="task.editing=!task.editing">
+                            <input type="checkbox" ng-model="task.done" ng-show="task.editing" />
+                            <span id="taskDisplay" class="done-{{task.done}}" ng-show="task.editing">
                             {{task.taskName}}
                             </span>
-                            <input type="text" ng-show="task.editing" value="{{task.taskName}} id="taskEditTxt" ng-keyup="editTask(task)" ng-model="task.taskName"/>
+                            <input type="text" ng-hide="task.editing" value="{{task.taskName}}" id="taskEditTxt" ng-keyup="editTask(task)" ng-model="task.taskName"/>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div id="notifyAlarm">
-            <span class="glyphicon glyphicon-calendar iconStyle" aria-hidden="true"></span>
         </div>
     </header>
     <div id="main">

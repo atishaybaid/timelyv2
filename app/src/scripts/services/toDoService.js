@@ -8,14 +8,13 @@ TimelyApp.service("toDoService", function() {
         this.taskKey = taskKey;
     };
     this.addTask = function(newTaskName) {
-        if (event.keyCode === 13) {
             taskList = this.retriveFromStorage();
             var date = new Date();
             var taskKey = date.getTime().toString();;
             var newTask = new Task(newTaskName,taskKey);
             taskList.push(newTask);
             this.storeToLocalStorage(taskList);
-        };
+        
     };
     this.storeToLocalStorage = function(taskList) {
         var key = 'taskList';

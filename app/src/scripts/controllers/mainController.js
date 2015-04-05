@@ -11,9 +11,13 @@
         
         $scope.addTask = function(){
 
+            if(event.keyCode === 13){
+
+
             toDoService.addTask($scope.newTask);
             $scope.taskList = toDoService.retriveFromStorage();
-
+            $scope.newTask = '';
+            }
         };
         
 
@@ -37,9 +41,10 @@
         $scope.editTask = function(task){
             if (event.keyCode === 13) {
                 toDoService.editTask(task);
+                 $scope.taskList = toDoService.retriveFromStorage();
             }
 
-        };
+        }; 
 
     
             

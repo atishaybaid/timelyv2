@@ -78,3 +78,11 @@ margin: 0px;
 /* #taskList input{
 	width:100px;
 } */
+
+#todoList button{
+	background-color: transparent;
+}
+
+.todoListPannel{
+	background-color: transparent;
+}
