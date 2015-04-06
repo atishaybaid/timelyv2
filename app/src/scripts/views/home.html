@@ -3,12 +3,11 @@
         <div id="temperature">{{temperature}} &#x2103;</div>
         <div id="todoList">
             <button class="btn" type="button" ng-init="show ='false'" ng-click="show = !show"><span class="glyphicon glyphicon-list iconStyle" aria-hidden="true"></span></button>
-            <div id="todoListPannel" class="panel panel-default" ng-hide="show">
+            <div  class="todoListPannel" ng-hide="show">
                 <input type="text" placeholder="Add task" ng-keyup="addTask()" ng-model="newTask" id="newTaskTxt"></input>
-                <div id="taskScoreBar" class="panel-heading"></div>
                 <div id="taskList">
                     <ul class="">
-                        <li class="panel-body taskName" data-ng-repeat="task in taskList" ng-dblclick="task.editing=!task.editing">
+                        <li class="taskName" data-ng-repeat="task in taskList" ng-dblclick="task.editing=!task.editing">
                             <input type="checkbox" ng-model="task.done" ng-show="task.editing" />
                             <span id="taskDisplay" class="done-{{task.done}}" ng-show="task.editing">
                             {{task.taskName}}

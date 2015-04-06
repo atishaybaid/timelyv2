@@ -84,5 +84,8 @@ margin: 0px;
 }
 
 .todoListPannel{
-	background-color: transparent;
+	height:300px;
+	overflow: scroll;
+	overflow-x:hidden;
+	overflow-y:auto;
 }
