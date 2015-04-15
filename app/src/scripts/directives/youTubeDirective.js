@@ -6,7 +6,7 @@ TimelyApp.directive('youtube', function($window) {
 
     directive.template = '<div id="myPlayer"></div>';
     
-    directive.complie = function(element, attribute) {
+    directive.compile = function(element, attribute) {
     	console.log("compile working");
         var scriptTag = document.createElement("script");
         scriptTag.src = "http://www.youtube.com/iframe_api";
@@ -28,11 +28,11 @@ TimelyApp.directive('youtube', function($window) {
         return link;
     };
 
-    var onPlayerReady = function(event){
+    $window.onPlayerReady = function(event){
     	console.log(event);
-                        	player.cuePlaylist(["OG0xt2xTq4A","jOYR3k1VhUQ"]);
+                        	//player.cuePlaylist(["OG0xt2xTq4A","jOYR3k1VhUQ"]);
                         //event.target.playVideo();
-                        	player.playVideo();
+                        	//player.playVideo();
 
     };
 
