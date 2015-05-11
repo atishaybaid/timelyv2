@@ -6,7 +6,7 @@
   "background": {
     "scripts": ["app/bower_components/angular/angular.js"]
   },
-  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "content_security_policy": "script-src 'self' https://s.ytimg.com/yts/jsbin/www-widgetapi-vfliZmGBd/www-widgetapi.js https://www.youtube.com/iframe_api; object-src 'self'",
   "chrome_url_overrides" : {
     "newtab": "app/src/index.html"
   }
