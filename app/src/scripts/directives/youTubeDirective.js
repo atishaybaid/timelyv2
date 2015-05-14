@@ -11,15 +11,26 @@ TimelyApp.directive('youtube', function($window) {
                 videoId:'OG0xt2xTq4A',
                 events: {
                     'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
                 }
             });
         };
     };
     $window.onPlayerReady = function(event) {
         console.log("at onReady");
-        event.target.loadPlaylist("_SaEl4cKaAo,w_HaezV0DqI,I4d0KU-SuBc");
+        event.target.loadPlaylist("im3qPTWiRoc");
 
         player.playVideo();
     };
+
+    $window.onPlayerStateChange = function(event){
+        console.log(event.data);
+         if (event.data == 0){
+            console.log("inside if"); 
+            player.playVideo();
+}
+    }
     return directive;
 });
+
+
