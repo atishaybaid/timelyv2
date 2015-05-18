@@ -1,9 +1,11 @@
 (function() {
     'use strict';
-    TimelyApp.controller("mainController", function($scope, $timeout, loadQuotationsService, weather,toDoService) {
+    TimelyApp.controller("mainController", function($scope, $timeout, loadQuotationsService, weather,toDoService,focusService){
         $scope.date={} ;
         $scope.quote;
         $scope.temperature;
+        $scope.displayFocusInputBox;
+       /* $scope.focus="abbc";*/
 
         $scope.newTask ="";
         $scope.taskList = [];
@@ -49,7 +51,31 @@
     
             
             $scope.taskList = toDoService.retriveFromStorage();
-            console.log($scope.taskList);
+            
+        $scope.createFocus = function(){
+
+            var chkIfNew = focusService.chkIfNew();
+            $scope.displayFocusInputBox = !chkIfNew;
+             if (event.keyCode === 13) {
+                console.log($scope.focus);
+                console.log("at event listner");
+                focusService.saveNewFocus($scope.focus);
+             }
+
+             console.log(chkIfNew);
+
+             if(chkIfNew == true){
+                $scope.displayFocus =chkIfNew;
+                var todaysFocusObj = focusService.previousFocus();
+                $scope.todaysFocus = todaysFocusObj.focus;
+                console.log($scope.todaysFocus);
+
+             };
+
+
+            
+
+        };
 
     
 
@@ -57,7 +83,8 @@
             updateTime();
             getQuatation();
             getTemperature();
-            //displayTask();
+            $scope.createFocus();
+    
         })
     });
 }());

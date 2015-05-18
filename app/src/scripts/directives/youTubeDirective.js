@@ -8,7 +8,7 @@ TimelyApp.directive('youtube', function($window) {
             player = new YT.Player('myPlayer', {
                 height: 0,
                 width: 0,
-                videoId:'OG0xt2xTq4A',
+                videoId: 'OG0xt2xTq4A',
                 events: {
                     'onReady': onPlayerReady,
                     'onStateChange': onPlayerStateChange
@@ -17,20 +17,13 @@ TimelyApp.directive('youtube', function($window) {
         };
     };
     $window.onPlayerReady = function(event) {
-        console.log("at onReady");
         event.target.loadPlaylist("im3qPTWiRoc");
-
         player.playVideo();
     };
-
-    $window.onPlayerStateChange = function(event){
-        console.log(event.data);
-         if (event.data == 0){
-            console.log("inside if"); 
+    $window.onPlayerStateChange = function(event) {
+        if (event.data == 0) {
             player.playVideo();
-}
+        }
     }
     return directive;
 });
-
-
