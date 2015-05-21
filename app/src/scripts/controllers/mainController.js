@@ -9,6 +9,9 @@
 
         $scope.newTask ="";
         $scope.taskList = [];
+                             
+        //changingng background randomly
+        
 
         
         $scope.addTask = function(){
@@ -76,6 +79,9 @@
             
 
         };
+
+
+         
 
     
 
