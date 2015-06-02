@@ -9,9 +9,14 @@
 
         $scope.newTask ="";
         $scope.taskList = [];
-                             
+                                 
         //changingng background randomly
-        
+
+        var changeBackground = function(){
+            var bckArray = ['cl.jpg','co.jpg','dc.jpg','hk.jpg','na.jpg','niv.jpg','pf,jpg','sr.jpg','nl.jpg','vf.jpg','yr.jpg'];
+            var bodyElement = document.getElementsByTagName('body')[0];
+            bodyElement.style.backgroundImage="url(../src/images/"+bckArray[Math.floor(Math.random()*bckArray.length)]+")";
+        };    
 
         
         $scope.addTask = function(){
@@ -90,6 +95,7 @@
             getQuatation();
             getTemperature();
             $scope.createFocus();
+            changeBackground();
     
         })
     });
