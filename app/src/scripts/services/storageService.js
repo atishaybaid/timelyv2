@@ -1,4 +1,6 @@
-TimelyApp.service("storageService",function(){
+define([],function(){
+
+function storageService() {
 	
 	this.saveToStorage  = function(key,value){
 		window.localStorage.setItem(key,value);
@@ -6,4 +8,8 @@ TimelyApp.service("storageService",function(){
 	this.retriveFrmStorage = function(key){
 	return window.localStorage.getItem(key);
 	}
+};
+
+    return storageService;
+    
 });

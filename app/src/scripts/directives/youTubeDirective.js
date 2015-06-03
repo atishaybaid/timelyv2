@@ -1,4 +1,6 @@
-TimelyApp.directive('youtube', function($window) {
+define([],function(){
+
+function youTubeDirective($window) {
     var directive = {};
     var player;
     directive.restrict = 'E';
@@ -26,4 +28,8 @@ TimelyApp.directive('youtube', function($window) {
         }
     }
     return directive;
+};
+    youTubeDirective.$inject = ['$window'];
+    
+    return youTubeDirective;
 });

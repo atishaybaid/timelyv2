@@ -1,9 +1,8 @@
-(function () {
-    'use strict';
+define([],function(){
 
-    TimelyApp.config(['$routeProvider',
-        function (routeProvider) {
-            routeProvider.
+
+function config($routeProvider) {
+            $routeProvider.
                 when('/home', {
                     templateUrl: 'scripts/views/home.html',
                     controller: 'mainController'
@@ -11,6 +10,12 @@
                 otherwise({
                     redirectTo: '/home'
                 });
-        }
-    ]);
-}());
+        };
+    
+    config.$inject = ['$routeProvider'];
+    
+    return config;
+    
+
+    
+});

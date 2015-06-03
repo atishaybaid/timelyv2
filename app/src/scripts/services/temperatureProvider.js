@@ -1,4 +1,6 @@
-TimelyApp.service("weather", function($http, $q) {
+define([],function(){
+
+function weather($http, $q) {
     this.apiKey = "9b702ccc56f4da90";
     this.getUrl = function() {
         var url = "http://api.wunderground.com/api/" + this.apiKey + "/conditions/q/autoip.json";
@@ -18,4 +20,10 @@ TimelyApp.service("weather", function($http, $q) {
             })
         });
     };
+};
+    weather.$inject =['$http','$q'];
+    return weather;
+    
+    
 });
+    

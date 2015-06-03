@@ -1,4 +1,6 @@
-TimelyApp.service("loadQuotationsService", function() {
+define([],function(){
+
+function loadQuotationsService() {
     var quotes = [{
         quote: "Stay Hungry,Stay foolish"
     }, {
@@ -27,4 +29,9 @@ TimelyApp.service("loadQuotationsService", function() {
         return quoteOfTheDay;
     };
 
-})
+};
+
+    return loadQuotationsService;
+    
+});
+    

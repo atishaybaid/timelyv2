@@ -1,6 +1,6 @@
-(function() {
-    'use strict';
-    TimelyApp.controller("mainController", function($scope, $timeout, loadQuotationsService, weather,toDoService,focusService){
+define([],function(){
+
+    function mainController($scope, $timeout, loadQuotationsService, weather,toDoService,focusService){
         $scope.date={} ;
         $scope.quote;
         $scope.temperature;
@@ -70,8 +70,7 @@
                 focusService.saveNewFocus($scope.focus);
              }
 
-             console.log(chkIfNew);
-
+         
              if(chkIfNew == true){
                 $scope.displayFocus =chkIfNew;
                 var todaysFocusObj = focusService.previousFocus();
@@ -98,5 +97,9 @@
             changeBackground();
     
         })
-    });
-}());
+    };
+    
+    mainController.$inject=['$scope', '$timeout','loadQuotationsService','weather','toDoService','focusService'];
+    return mainController;
+
+});
